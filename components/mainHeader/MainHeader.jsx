@@ -1,11 +1,14 @@
-import { headers } from "next/headers";
+"use client"
 import Link from "next/link";
 import React from "react";
 import logoImage from "@/public/images/logo.png";
 import style from "./main-header.module.css";
 import Image from "next/image";
 import MainHeaderBackground from "./main-header-background";
+import { usePathname } from "next/navigation";
+import NavLink from "./NavLink";
 function MainHeader() {
+  
   return (
     <>
       <MainHeaderBackground />
@@ -18,10 +21,10 @@ function MainHeader() {
         <nav className={style.nav}>
           <ul>
             <li>
-              <Link href="/meals">Browse Meals</Link>
+              <NavLink href={'/meals'}>Browse Meals</NavLink>
             </li>
             <li>
-              <Link href="/community">Foodies Community</Link>
+              <NavLink href={'/community'}>Foodies Community</NavLink>
             </li>
           </ul>
         </nav>
