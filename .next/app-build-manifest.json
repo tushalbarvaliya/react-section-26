@@ -43,6 +43,7 @@
     "/meals/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/meals/[slug]/page.css",
       "static/chunks/app/meals/[slug]/page.js"
     ],
     "/not-found": [
