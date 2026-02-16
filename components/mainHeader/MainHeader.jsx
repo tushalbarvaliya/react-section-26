@@ -1,7 +1,7 @@
 import { headers } from "next/headers";
 import Link from "next/link";
 import React from "react";
-import logoImage from "../public/images/logo.png";
+import logoImage from "@/public/images/logo.png";
 import style from "./main-header.module.css";
 import Image from "next/image";
 import MainHeaderBackground from "./main-header-background";
