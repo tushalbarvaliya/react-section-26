@@ -28,6 +28,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/meals/share/page.js"
+    ],
+    "/meals/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/meals/loading.css",
+      "static/chunks/app/meals/loading.js"
     ]
   }
 }
