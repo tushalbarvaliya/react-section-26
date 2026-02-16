@@ -1,4 +1,4 @@
-// File: /home/tushal/Desktop/React/react-section-26/app/layout.js
+// File: /home/tushal/Desktop/React/react-section-26/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
