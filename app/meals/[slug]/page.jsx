@@ -2,15 +2,19 @@ import React from "react";
 import style from "./page.module.css";
 import Image from "next/image";
 import { getMeal } from "@/lib/meals";
+import { notFound } from "next/navigation";
 
 const page = ({ params }) => {
   const meal = getMeal(params.slug);
-  meal.instructions = meal.instructions.replace(/\n/g,'<br />')
+  if (!meal) {
+    notFound();
+  }
+  meal.instructions = meal.instructions.replace(/\n/g, "<br />");
   return (
     <>
       <header className={style.header}>
         <div className={style.image}>
-          <Image fill src={meal.image} alt={meal.title}/>
+          <Image fill src={meal.image} alt={meal.title} />
         </div>
         <div className={style.headerText}>
           <h1>{meal.title}</h1>
